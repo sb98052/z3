@@ -1,0 +1,5 @@
+{% for m in consts -%}
+{% for k, v in m.iteritems() -%}
+module.exports.{{ k }} = {{ v }};
+{% endfor -%}
+{% endfor%}
